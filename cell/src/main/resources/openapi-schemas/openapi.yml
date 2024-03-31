@@ -1,0 +1,26 @@
+openapi: 3.0.2
+info:
+  title: API-Spec
+  description: OpenAPI specification
+  termsOfService: http://swagger.io/terms
+  contact:
+    email: jtavera235@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.0.1-SNAPSHOT
+servers:
+  - url: http://localhost:8080/api
+
+paths:
+
+  /tests:
+
+    post:
+      tags:
+        - Test
+      summary: Test post
+      operationId: testEndpoint
+      responses:
+        200:
+          description: Successfully Tests
